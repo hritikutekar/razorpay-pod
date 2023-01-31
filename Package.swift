@@ -36,7 +36,7 @@ let package = Package(
     targets: [
         .target(
             name: "Razorpay",
-            path: "Pod/Razorpay.xcframework",
+            path: ".",
             exclude: ["UpdatePod.sh"]
         ),
     ],
