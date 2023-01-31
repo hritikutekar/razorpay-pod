@@ -26,11 +26,7 @@ import PackageDescription
 
 let package = Package(
     name: "Razorpay",
-    platforms: [
-        .iOS(.v9),
-        .macOS(.v10_10),
-        .tvOS(.v9),
-    ],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "Razorpay",
