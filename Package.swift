@@ -25,18 +25,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "Razorpay",
+    name: "RazorPay",
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "Razorpay",
-            targets: ["Razorpay"]
+            name: "RazorPay",
+            targets: ["RazorPay"]
         ),
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
-            name: "Razorpay",
+            name: "RazorPay",
             path: "Pod/Razorpay.xcframework"
         )
     ]
