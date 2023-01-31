@@ -35,14 +35,11 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(
-            name: "Razorpay",
-        ),
         .binaryTarget(
             name: "Razorpay",
-            path: "Pod/Razorpay.xcframework",
+            path: "Pod/Razorpay.xcframework/ios-arm64_armv7/Razorpay.framework",
         ),
     ]
- )
+)
 
 //  x-xcode-log://DB6E1F5D-F576-4E85-B951-B885A77F83F2 public headers ("include") directory path for 'Razorpay' is invalid or not contained in the target
