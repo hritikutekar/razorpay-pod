@@ -26,19 +26,23 @@ import PackageDescription
 
 let package = Package(
     name: "Razorpay",
-    platforms: [.iOS(.v11)],
+    platforms: [
+        .iOS(.v9),
+        .macOS(.v10_10),
+        .tvOS(.v9),
+    ],
     products: [
         .library(
             name: "Razorpay",
-            targets: ["Razorpay"]
-        )
+            targets: ["Razorpay"]),
     ],
+    dependencies: [],
     targets: [
         .target(
             name: "Razorpay",
-            path: ".",
-            exclude: ["UpdatePod.sh"]
-        ),
-    ],
-    swiftLanguageVersions: [.v5]
-)
+            path: "Pod/Razorpay.xcframework/ios-arm64_armv7/Razorpay.framework",
+            cSettings: [
+                .headerSearchPath("Headers/**"),
+            ]),
+    ]
+ )
