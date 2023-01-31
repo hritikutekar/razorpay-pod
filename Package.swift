@@ -30,13 +30,13 @@ let package = Package(
     products: [
         .library(
             name: "Razorpay",
-            targets: ["Razorpay"]),
+            targets: ["Razorpay"]
+        ),
     ],
     dependencies: [],
     targets: [
         .target(
             name: "Razorpay",
-            exclude: "UpdatePod.sh"
         ),
         .binaryTarget(
             name: "Razorpay",
