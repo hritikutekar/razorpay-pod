@@ -36,10 +36,11 @@ let package = Package(
     targets: [
         .target(
             name: "Razorpay",
-            path: "Pod/Razorpay.xcframework/ios-arm64_armv7/Razorpay.framework",
-            cSettings: [
-                .headerSearchPath("Headers/**"),
-            ]
+            exclude: "UpdatePod.sh"
+        ),
+        .binaryTarget(
+            name: "Razorpay",
+            path: "Pod/Razorpay.xcframework",
         ),
     ]
  )
