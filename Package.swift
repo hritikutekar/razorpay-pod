@@ -37,7 +37,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Razorpay",
-            path: "Pod/Razorpay.xcframework/ios-arm64_armv7/Razorpay.framework"
+            path: "Pod/Razorpay.xcframework"
         )
     ]
 )
